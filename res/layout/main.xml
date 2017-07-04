@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture" >
+
+	<ToggleButton
+	    android:id="@+id/toggleButtonLED"
+	    android:layout_width="500dp"
+	    android:layout_height="200dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:onClick="blinkLED"
+	    android:textOff="Turn ON"
+	    android:textOn="Turn OFF"
+	    android:visibility="invisible"
+	    android:textSize="50sp" />
+
+	<Button
+	    android:id="@+id/btUpdate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/toggleButtonLED"
+	    android:layout_alignLeft="@+id/toggleButtonLED"
+	    android:layout_alignRight="@+id/toggleButtonLED"
+	    android:text="上傳數據" />
+
+	<TextView
+	    android:id="@+id/tvTemperature"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/tvFlame"
+	    android:layout_below="@+id/tvFlame"
+	    android:layout_marginTop="37dp"
+	    android:text=""
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<TextView
+	    android:id="@+id/tvFlame"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btUpdate"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="36dp"
+	    android:text="火焰值:"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textSize="28sp" />
+
+	<Button
+	    android:id="@+id/btTest"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/btUpdate"
+	    android:layout_alignBottom="@+id/btUpdate"
+	    android:layout_marginLeft="35dp"
+	    android:layout_toRightOf="@+id/toggleButtonLED"
+	    android:visibility="invisible"
+	    android:text="Button" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/toggleButtonLED"
+	    android:layout_alignTop="@+id/toggleButtonLED"
+	    android:layout_marginTop="62dp"
+	    android:text=""
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<TextView
+	    android:id="@+id/tvFlameValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/tvTemperature"
+	    android:layout_centerHorizontal="true"
+	    android:text="none"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="#0000ff"
+	    android:textSize="28sp" />
+
+	<TextView
+	    android:id="@+id/tvHumidityValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvTemperature"
+	    android:layout_alignBottom="@+id/tvTemperature"
+	    android:layout_alignLeft="@+id/tvFlameValue"
+	    android:text=""
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="#008000" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/toggleButtonLED"
+	    android:layout_alignBottom="@+id/toggleButtonLED"
+	    android:layout_alignLeft="@+id/toggleButtonLED"
+	    android:text=""
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
